@@ -42,9 +42,9 @@ public class Ejercicio7 {
         
         System.out.println("TIPO DE REGALO \t \t      NUMERO PERSONAS \t \t  EDAD MEDIA \t \t   PORCENTAJE");
         System.out.println("Jamon Iberico \t \t \t \t" + Jamon.getNumeroPersonas() + "\t \t \t " + Jamon.getEdadMedia() + "\t \t \t " + Jamon.calcularPorcentaje(totalPersonas) + "%");
-        System.out.println("Bebidas       \t \t \t \t" + Bebidas.getNumeroPersonas() + "\t \t \t " + Bebidas.getEdadMedia() + "\t \t \t " + Bebidas.calcularPorcentaje(totalPersonas) + "%");
+        System.out.println("Bebidas       \t \t \t \t" + Bebidas.getNumeroPersonas()+"\t \t \t " + Bebidas.getEdadMedia()+"\t \t \t " + Bebidas.calcularPorcentaje(totalPersonas) + "%");
         System.out.println("Otros         \t \t \t \t" + Otros.getNumeroPersonas() + "\t \t \t " + Otros.getEdadMedia() + "\t \t \t " + Otros.calcularPorcentaje(totalPersonas) + "%");
-        System.out.println("Resumen       \t \t \t \t" + totalPersonas +             "\t \t \t"  + edadMediaTotal);
+        System.out.println("Resumen       \t \t \t \t" + totalPersonas +             "\t \t \t "  + edadMediaTotal);
         if (Jamon.getNumeroPersonas()> Bebidas.getNumeroPersonas() && Jamon.getNumeroPersonas() > Otros.getNumeroPersonas()){
             System.out.println("El regalo mas solicitado es el Jamon Iberico");
         }
